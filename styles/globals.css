@@ -2,6 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -23,4 +24,47 @@ a {
     color: white;
     background: black;
   }
+}
+body{ 
+  display:flex; 
+  flex-direction:column; 
+}
+
+.navbar{
+  background: #fffb00;
+  padding: 0.5rem;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-brand{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+
+}
+.navbar-image{
+  align-items: center;
+}
+
+.footer{
+  background-color: #fffb00;
+  color: white;
+  text-align: center;
+  height: 8vh;
+  
+}
+.footer-brand{
+  font-weight: bold;
+  color: #000;
+
+}
+.hero{
+  background: #161753;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 68vh;
 }
