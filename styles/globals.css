@@ -46,6 +46,7 @@ body{
 }
 .navbar-image{
   align-items: center;
+  width: 2rem;
 }
 
 #footer{
@@ -67,8 +68,6 @@ body{
   align-items: center;
   min-height: 68vh;
 }
-
-
 
 .cntr_pg {  
   position: absolute;  
@@ -145,4 +144,15 @@ body{
   box-shadow:0px 1px 4px #E4E4E4;  
  }  
 
- 
+.select_box{
+  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.select{
+  width: 20%;
+}
