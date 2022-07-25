@@ -3,8 +3,8 @@
 const Footer = () => {
     return (
         
-        <div className="footer">
-            <h2>This is Footer</h2>
+        <div id="footer">
+            <b>This Is Footer</b>
             </div>
         
     )
