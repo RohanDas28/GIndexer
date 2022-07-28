@@ -12,7 +12,7 @@ const Header = () =>{
             </div>
 
             <div className="navbar-image">
-            <a href="https://github.com/RohanDas28/GIndexer" target={"_blank"}>
+            <a href="https://github.com/RohanDas28/GIndexer" rel="noopener noreferrer" target={"_blank"}>
             <Image src="/github.png" alt="me" width="64" height="64" />
             </a>
             </div>

@@ -40,7 +40,7 @@ const Body = () => {
     <>
       <div className="body">
           <div className="body__image">
-          <Image src="/gindexlogo.png" width="272" height="92"></Image>
+          <Image src="/gindexlogo.png" alt="logo" width="272" height="92"></Image>
           </div>
           <div className="body__search">
             <input type="text" className="searchfield" name="searchfield" placeholder="Enter search Query" id="search_bar" maxLength="30" />
