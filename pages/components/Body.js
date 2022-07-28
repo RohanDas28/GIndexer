@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 
 const Body = () => {
   let URL=`https://www.google.com/search?q=`;
@@ -39,11 +40,7 @@ const Body = () => {
     <>
       <div className="body">
           <div className="body__image">
-          <img
-            className="logo"
-            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-            alt="Google logo"
-          />
+          <Image src="/gindexlogo.png" width="272" height="92"></Image>
           </div>
           <div className="body__search">
             <input type="text" className="searchfield" name="searchfield" placeholder="Enter search Query" id="search_bar" maxLength="30" />
