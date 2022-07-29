@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300&display=swap');
 
-/* COLOR PALLET 
-#1A1A1D = for background
-#4E4E50 = for relaxed text
-#6f2232 = for hover button
-#950740 = for border
-#C3073F = for buttons
-*/
 
 
 
@@ -26,6 +19,7 @@ a {
 * {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  overflow: hidden;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,13 +28,13 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background:#292929;
   }
 }
 
 
 .navbar{
-  background: #C3073F;
+  background: #9e50ad;
   padding: 0.5rem;
   height: 6vh;
   display: flex;
@@ -65,7 +59,7 @@ a {
   bottom: 0;
   width: 100%;
   height: 4vh;
-  background:#C3073F;
+  background:#9e50ad;
   text-align: center;
   color: #000;
 }
@@ -75,7 +69,7 @@ a {
 .body{
   width: 100vw;
   min-height: 84vh;
-  background-color: #1A1A1D;
+  background-color: #292929;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,13 +94,25 @@ a {
   width: 55%;
   /* background-color: red; */
 }
+
+.body__image{
+  width : 100%;
+  height: 100%;
+  text-align: center;
+}
+.body__image:hover{
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+
 .searchfield{
   width: 79%; 
   height: 2.9em;
   border-radius: 15px;
   outline: none;
   background: white;
-  border: 2px solid black;
+  border: 2px solid #ffb2ff;
   color: black;
   padding: 0px 10px;
   font-size: 15px;
@@ -114,29 +120,30 @@ a {
 }
 .searchfield:active{
   background-color: white;
-  border: 2px solid #950740;
+  border: 2px solid #ffb2ff;
 }
 .searchfield:focus{
-  -webkit-box-shadow: 0px 0px 10px 0px #950740;
-  box-shadow: 0px 0px 10px 0px #950740;
+  -webkit-box-shadow: 0px 0px 10px 0px #ffb2ff;
+  box-shadow: 0px 0px 10px 0px #ffb2ff;
+  transition: all 0.2s ease-in-out;
 }
 
 .select{
   width: 19%;
   height: 2.9em;
   padding: 0 8px;
-  background-color: #C3073F ;
+  background-color: #ffb2ff ;
   border-radius: 15px;  
-  color: white; ;
+  color: black; ;
   outline: none;
   cursor: pointer;
-  border: 2px solid #950740 ;
+  border: 2px solid #573160 ;
   font-size: 15px;
 }
 
 .submit_button{
   color: white ;
-    border: 2px solid #C3073F ;
+    border: 2px solid #ffb2ff ;
     padding: 5px 25px;
     border-radius: 15px;
     background: transparent;
@@ -147,6 +154,10 @@ a {
     cursor: pointer;
 }
 .submit_button:hover{
-  background-color: #C3073F ;
-  color: white;
+  background-color: #ffb2ff ;
+  color: black;
+  -webkit-box-shadow: 0px 0px 15px 0px #ffb2ff;
+  box-shadow: 0px 0px 15px 0px #ffb2ff;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
