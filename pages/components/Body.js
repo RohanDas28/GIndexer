@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
+import axios from "axios"
 
 const Body = () => {
   let URL=`https://www.google.com/search?q=`;
@@ -32,6 +33,19 @@ const Body = () => {
     window.open(`${final_query}`,'_blank')
   }
 
+  const[joke, setJoke] = useState('');
+
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios("https://v2.jokeapi.dev/joke/Any?blacklistFlags=racist,sexist&type=single");
+      // console.log(result.data);
+      setJoke(`${result.data.joke}`);
+    }
+    fetchData();
+  }, []);
+
+
   return (
     <>
       <div className="body">
@@ -51,6 +65,10 @@ const Body = () => {
             </select>
           </div>
           <a onClick={handleClick} id="submit_button" className="submit_button">Search</a>
+          <div className="jokeBody">
+          <h2>A little joke for you!</h2>
+          <h3>{joke}</h3>
+          </div>
       </div>
     </>
   );
