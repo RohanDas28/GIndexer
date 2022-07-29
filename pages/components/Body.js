@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import axios from "axios"
-
+import Head from 'next/head'
 const Body = () => {
   let URL=`https://www.google.com/search?q=`;
 
@@ -48,6 +48,11 @@ const Body = () => {
 
   return (
     <>
+    <Head>
+    <title>GIndex</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <meta name="description" content="Search for files on Google" />
+    </Head>
       <div className="body">
           <div className="body__image">
           <Image src="/gindexlogo.png" alt="logo" width="272" height="92"></Image>
