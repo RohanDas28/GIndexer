@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         
         <div id="footer">
-            <b>© Rohan Das & Abhishek Pathak 2022</b>
+            <b>Brainmade by Rohan Das & Abhishek Pathak</b>
             </div>
         
     )

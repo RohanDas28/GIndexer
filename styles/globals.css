@@ -28,15 +28,15 @@ a {
   }
   body {
     color: white;
-    background:#292929;
+    background:#130F40;
   }
 }
 
 
 .navbar{
-  background: #9e50ad;
+  background: #686DE0;
   padding: 0.5rem;
-  height: 3rem;
+  height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,9 +59,9 @@ a {
   bottom: 0;
   width: 100%;
   height: 2.5rem;
-  background:#9e50ad;
+  background:#30336B;
   text-align: center;
-  color: #000;
+  color: #DFF9FB;
 }
 
 /* New */
@@ -69,7 +69,7 @@ a {
 .body{
   width: 100vw;
   min-height: 35rem;
-  background-color: #292929;
+  background-color: #130F40;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,10 +78,11 @@ a {
 /* Google logo */
 .logo {  
   display: 100%;  
-  height: 92px;  
-  width: 272px;  
+  width: 427.08px;
+  height: 113.3px; 
   display: block;  
-  margin-bottom: 4px;  
+
+  /* padding-bottom: 2px; */
 }
 
 /* Search bar and dropdown section */
@@ -92,6 +93,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 55%;
+  margin-top: 2rem;
   /* background-color: red; */
 }
 
@@ -100,31 +102,24 @@ a {
   height: 100%;
   text-align: center;
 }
-.body__image:hover{
-  transform: scale(1.1);
-  transition: all 0.2s ease-in-out;
-}
+
 
 
 .searchfield{
   width: 79%; 
   height: 2.9em;
-  border-radius: 15px;
+  border-radius: 10px;
   outline: none;
-  background: white;
-  border: 2px solid #ffb2ff;
-  color: black;
+  background: #DFF9FB;
+  color: #1d2931;
   padding: 0px 10px;
   font-size: 15px;
   font-weight: 400;
 }
-.searchfield:active{
-  background-color: white;
-  border: 2px solid #ffb2ff;
-}
+
 .searchfield:focus{
-  -webkit-box-shadow: 0px 0px 10px 0px #ffb2ff;
-  box-shadow: 0px 0px 10px 0px #ffb2ff;
+  -webkit-box-shadow: 0px 0px 10px 0px #DFF9FB;
+  box-shadow: 0px 0px 10px 0px #DFF9FB;
   transition: all 0.2s ease-in-out;
 }
 
@@ -132,21 +127,21 @@ a {
   width: 19%;
   height: 2.9em;
   padding: 0 8px;
-  background-color: #ffb2ff ;
-  border-radius: 15px;  
-  color: black; ;
+  background-color: #DFF9FB ;
+  border-radius: 10px;  
+  color: #30336B; ;
   outline: none;
   cursor: pointer;
-  border: 2px solid #573160 ;
   font-size: 15px;
 }
 
 .submit_button{
-  color: white ;
-    border: 2px solid #ffb2ff ;
     padding: 5px 25px;
-    border-radius: 15px;
+    border-radius: 10px;
+    color: #30336B;
     background: transparent;
+    background-color: #DFF9FB ;
+    color: black;
     margin-top: 2rem;
     width: min-content;
     text-decoration: none;
@@ -154,10 +149,8 @@ a {
     cursor: pointer;
 }
 .submit_button:hover{
-  background-color: #ffb2ff ;
-  color: black;
-  -webkit-box-shadow: 0px 0px 15px 0px #ffb2ff;
-  box-shadow: 0px 0px 15px 0px #ffb2ff;
+  -webkit-box-shadow: 0px 0px 15px 0px #DFF9FB;
+  box-shadow: 0px 0px 15px 0px #DFF9FB;
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
 }

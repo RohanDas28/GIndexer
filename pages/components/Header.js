@@ -1,23 +1,27 @@
 
 import Image from 'next/image'
+import Head from 'next/head'
 const Header = () =>{
     return (
+        <>
+        <Head>
+            <meta property="og:image" content="/Meta-Image.png" />
+        </Head>
+
         <div className="navbar">
             
             <div className="navbar-brand">
-                <a href="#">
-                <span style={{"color" :"#F4B400",}}>G</span>
-                <span style={{"color" :"#0F9D58",}}>I</span>
-                </a>
+            <Image src="/gindexwhite.svg" alt="logo" width="131" height="26"></Image>
             </div>
 
             <div className="navbar-image">
             <a href="https://github.com/RohanDas28/GIndexer" rel="noopener noreferrer" target={"_blank"}>
-            <Image src="/github.png" alt="me" width="64" height="64" />
+            <Image src="/github.svg" alt="me" width="64" height="64" />
             </a>
             </div>
             
         </div>
+        </>
     )
 }
 
