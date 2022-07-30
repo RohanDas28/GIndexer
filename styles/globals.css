@@ -22,7 +22,7 @@ a {
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+@media{
   html {
     color-scheme: dark;
   }
