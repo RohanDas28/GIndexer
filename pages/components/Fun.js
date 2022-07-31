@@ -24,7 +24,7 @@ const Fun = () => {
             <div className="coffee">
                 <div className="coffee__data">
                     <Image src="/coffee.png" alt="logo" width="55" height="55" id="coffee"></Image>
-                    <a className="coffee__text" target="_blank" href="https://www.buymeacoffee.com/rohandas">Buy me a coffee</a>
+                    <a className="coffee__text" target="_blank" rel="noopener noreferrer"  href="https://www.buymeacoffee.com/rohandas">Buy me a coffee</a>
                 </div>
             </div>
             <div className="jokes__container">
