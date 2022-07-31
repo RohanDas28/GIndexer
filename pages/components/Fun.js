@@ -31,7 +31,7 @@ const Fun = () => {
                 <div className="jokes">
 
                     <h3 className="h3">A Little joke for you</h3>
-                    <p className="joke">&apos;re{joke}&apos;re</p>
+                    <p className="joke"><q>{joke}</q></p>
                 </div>
             </div>
         </div>
