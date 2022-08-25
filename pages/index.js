@@ -11,7 +11,6 @@ export default function Home() {
     <Header/>
     <Body/>
     <Fun/>
-    <Footer/>
     </>
   )
 }
